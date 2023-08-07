@@ -1,9 +1,9 @@
 <div align="center">
 
-# asdf-helper-plugin [![Build](https://github.com/ngyewch/asdf-helper-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/ngyewch/asdf-helper-plugin/actions/workflows/build.yml) [![Lint](https://github.com/ngyewch/asdf-helper-plugin/actions/workflows/lint.yml/badge.svg)](https://github.com/ngyewch/asdf-helper-plugin/actions/workflows/lint.yml)
+# rtx-helper-plugin [![Build](https://github.com/ngyewch/rtx-helper-plugin/actions/workflows/build.yml/badge.svg)](https://github.com/ngyewch/rtx-helper-plugin/actions/workflows/build.yml) [![Lint](https://github.com/ngyewch/rtx-helper-plugin/actions/workflows/lint.yml/badge.svg)](https://github.com/ngyewch/rtx-helper-plugin/actions/workflows/lint.yml)
 
 
-[asdf-helper](https://github.com/ngyewch/asdf-helper) plugin for the [asdf version manager](https://asdf-vm.com).
+[rtx-helper](https://github.com/ngyewch/rtx-helper) plugin for the [asdf version manager](https://asdf-vm.com).
 
 </div>
 
@@ -23,23 +23,23 @@
 Plugin:
 
 ```shell
-asdf plugin add asdf-helper https://github.com/ngyewch/asdf-helper-plugin.git
+asdf plugin add rtx-helper https://github.com/ngyewch/rtx-helper-plugin.git
 ```
 
-asdf-helper:
+rtx-helper:
 
 ```shell
 # Show all installable versions
-asdf list-all asdf-helper
+asdf list-all rtx-helper
 
 # Install specific version
-asdf install asdf-helper latest
+asdf install rtx-helper latest
 
 # Set a version globally (on your ~/.tool-versions file)
-asdf global asdf-helper latest
+asdf global rtx-helper latest
 
-# Now asdf-helper commands are available
-asdf-helper version
+# Now rtx-helper commands are available
+rtx-helper version
 ```
 
 Check [asdf](https://github.com/asdf-vm/asdf) readme for more instructions on how to
@@ -49,7 +49,7 @@ install & manage versions.
 
 Contributions of any kind welcome! See the [contributing guide](contributing.md).
 
-[Thanks goes to these contributors](https://github.com/ngyewch/asdf-helper-plugin/graphs/contributors)!
+[Thanks goes to these contributors](https://github.com/ngyewch/rtx-helper-plugin/graphs/contributors)!
 
 # License
 
