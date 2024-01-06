@@ -2,9 +2,9 @@
 
 set -euo pipefail
 
-GH_REPO="https://github.com/ngyewch/rtx-helper"
-TOOL_NAME="rtx-helper"
-TOOL_TEST="rtx-helper version"
+GH_REPO="https://github.com/ngyewch/mise-helper"
+TOOL_NAME="mise-helper"
+TOOL_TEST="mise-helper version"
 
 fail() {
   echo -e "asdf-$TOOL_NAME: $*"
@@ -13,7 +13,7 @@ fail() {
 
 curl_opts=(-fsSL)
 
-# NOTE: You might want to remove this if rtx-helper is not hosted on GitHub releases.
+# NOTE: You might want to remove this if mise-helper is not hosted on GitHub releases.
 if [ -n "${GITHUB_API_TOKEN:-}" ]; then
   curl_opts=("${curl_opts[@]}" -H "Authorization: token $GITHUB_API_TOKEN")
 fi
@@ -98,7 +98,7 @@ download_release() {
   version="$1"
   filename="$2"
 
-  url="$GH_REPO/releases/download/v${version}/rtx-helper_${version}_$(get_platform)_$(get_arch).$(get_ext)"
+  url="$GH_REPO/releases/download/v${version}/mise-helper_${version}_$(get_platform)_$(get_arch).$(get_ext)"
 
   echo "* Downloading $TOOL_NAME release $version..."
   curl "${curl_opts[@]}" -o "$filename" -C - "$url" || fail "Could not download $url"
@@ -117,7 +117,7 @@ install_version() {
     mkdir -p "$install_path"
     cp -r "$ASDF_DOWNLOAD_PATH"/* "$install_path"
 
-    # TODO: Assert rtx-helper executable exists.
+    # TODO: Assert mise-helper executable exists.
     local tool_cmd
     tool_cmd="$(echo "$TOOL_TEST" | cut -d' ' -f1)"
     test -x "$install_path/$tool_cmd" || fail "Expected $install_path/$tool_cmd to be executable."

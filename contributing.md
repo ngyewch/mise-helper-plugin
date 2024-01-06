@@ -6,7 +6,7 @@ Testing Locally:
 asdf plugin test <plugin-name> <plugin-url> [--asdf-tool-version <version>] [--asdf-plugin-gitref <git-ref>] [test-command*]
 
 #
-asdf plugin test rtx-helper https://github.com/ngyewch/rtx-helper-plugin.git "rtx-helper version"
+asdf plugin test mise-helper https://github.com/ngyewch/mise-helper-plugin.git "mise-helper version"
 ```
 
 Tests are automatically run in GitHub Actions on push and PR.
